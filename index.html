@@ -12,10 +12,10 @@
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>So and So's Photography!</title>
+    <title>Worcester Photography</title>
 </head>
 
 <body>
@@ -27,8 +27,8 @@
                     <img src="img/logo.png" class="img-fluid" />
                 </div>
                 <div class="col">
-                    <h1>So and So's Photography!</h1>
-                    <h2>It's good</h2>
+                    <h1>Worcester County Photography</h1>
+                    <h2>Capture the Heart of Massachusetts!</h2>
                 </div>
                 <div class="col-md-4 col-xl-2">
                     <button type="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">
@@ -38,73 +38,132 @@
             </div>
         </div>
     </header>
-        <div id="reserveModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-info text-white">
-                        <h3 class="modal-title">Book A Session</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <form>
-                                <div class="form-group row">
-                                    <label for="numCampers" class="col-sm-6 col-form-label ">Number of People</label>
-                                    <div class="col">
-                                        <select name="numCampers" id="numCampers" class="form-control">
-                                            <option value="select">Select...</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                        </select>
-                                    </div>
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h3 class="modal-title">Book A Session</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <label for="numCampers" class="col-sm-6 col-form-label ">Type of Session</label>
+                                <div class="col">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option value="select">Select...</option>
+                                        <option value="1">Family Portrait</option>
+                                        <option value="2">School Portrait</option>
+                                        <option value="3">Professional Headshot</option>
+                                        <option value="4">Wedding</option>
+                                        <option value="5">Sports</option>
+                                        <option value="6">Other</option>
+                                    </select>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="dates" class="col-sm-6 col-form-label ">Date</label>
-                                    <div class="col">
-                                        <input type="date" id="dates" class="form-control" name="date"
-                                            placeholder="mm/dd/yyyy" />
-                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="dates" class="col-sm-6 col-form-label ">Date</label>
+                                <div class="col">
+                                    <input type="date" id="dates" class="form-control" name="date"
+                                        placeholder="mm/dd/yyyy" />
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-sm-2 col-form-label">Location</label>
-                                    <div class="btn-group btn-group-toggle col-2" data-toggle="buttons">
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Location</label>
+                                <div class="btn-group btn-group-toggle col-6" data-toggle="buttons">
                                     <label class="btn btn-success form-control">
                                         <input type="radio" value="siteType" name="tent" id="siteTent" checked> Home
                                     </label>
                                     <label class="btn btn-primary form-control">
                                         <input type="radio" value="siteType" name="RV" id="siteRV"> Other
-                                    </div>
-                                    </label>
                                 </div>
-                                <div class="form-group row">
-                                    <div class="col-2">
-                                        <button type="cancel" class="btn btn-secondary">Cancel</button>
-                                    </div>
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-primary">Search</button>
-                                    </div>
+                                </label>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-2">
+                                    <button type="cancel" class="btn btn-secondary">Cancel</button>
                                 </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
 
-                            </form>
+                        </form>
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">Home</a> 
+                </li>
+                <li>
+                    <a href="aboutus.html">About</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle">Portraits</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="hadwen.html">Hadwen Park Location</a>
+                        </li>
+                        <li>
+                            <a href="wachusett.html">Wachusett Mountain Location</a>
+                        </li>
+                        <li>
+                            <a href="onsite.html">Choose Your Site</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="headshots.html">School Picture Days</a>
+                </li>
+                <li>
+                    <a href="headshots.html">Professional Headshots</a>
+                </li>
+                <li>
+                    <a href="wedding.html">Weddings</a>
+                </li>
+                <li>
+                    <a href="sports.html">Sport Events</a>
+                </li>
+                <li>
+                    <a href="meetphotographer.html">Meet the Photographer</a>
+                </li>
+                <li>
+                    <a href="contactus.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="hadwenpath.jpg" alt="A child walking down a path in Hadwen Park." />
+            </div>
+        </div>
+    </div>
 
     <footer>
 
     </footer>
 
-  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
