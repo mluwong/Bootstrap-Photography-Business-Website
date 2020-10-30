@@ -73,10 +73,11 @@ b {
   object-position:50% 50%;
  }
 
- .btn-toolbar {
-  margin-top: 30px; 
-}
-
 p { margin:0 }
+
+.top-buffer { margin-top:20px; }
+
+.navbar-dark {
+  background-color: #901CAD; }
 
 

@@ -20,18 +20,24 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-10">
+        <div class="row top-buffer">
+            <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                <img src="img2/worcesterlogo.jpg" class="img-fluid" />
             </div>
             <div class="col">
-                <div class="btn-toolbar">
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#reserveModal">
-                        Book A Session</a>
-                    </button>
-                </div>
+                <h1><b>Worcester Photography Studio</b></h1>
+                <h3>Capture the heart of Massachusetts</h3>
+            </div>
+
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#reserveModal">
+                    Book A Session</a>
+                </button>
             </div>
         </div>
     </div>
+
+
 
 
     <div id="reserveModal" class="modal fade" role="dialog">
@@ -71,7 +77,8 @@
                                 <label class="col-sm-6 col-form-label">Location</label>
                                 <div class="btn-group btn-group-toggle col-2" data-toggle="buttons">
                                     <label class="btn btn-light form-control">
-                                        <input type="radio" value="locationType" name="studio" id="locationStudio" checked> Studio
+                                        <input type="radio" value="locationType" name="studio" id="locationStudio"
+                                            checked> Studio
                                     </label>
                                     <label class="btn btn-light form-control">
                                         <input type="radio" value="locationType" name="other" id="locationOther"> Other
@@ -95,70 +102,64 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                <img src="img2/worcesterlogo.jpg" class="img-fluid" />
-            </div>
-            <div class="col">
-                <h1><b>Worcester Photography Studio</b></h1>
-                <h3>Capture the heart of Massachusetts</h3>
-            </div>
-        </div>
-    </div>
 
     <div class="container">
         <div class="row row-content">
-            <div class="col-2 wrapper">
+            <div class="col-sm-2 wrapper">
                 <!-- Sidebar -->
-                <nav id="sidebar">
-                    <ul class="list-unstyled components">
-                        <li class="active">
-                            <a href="#" class="text-dark">Home</a>
-                        </li>
-                        <li>
-                            <a href="aboutus.html" class="text-dark">About</a>
-                        </li>
-                        <li>
-                            <a href="faq.html" class="text-dark">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
-                                class="dropdown-toggle text-dark">Portraits</a>
-                            <ul class="collapse list-unstyled" id="pageSubmenu">
-                                <li>
-                                    <a href="family.html" class="text-dark">Family Portraits</a>
-                                </li>
-                                <li>
-                                    <a href="senior.html" class="text-dark">Senior Portraits</a>
-                                </li>
-                                <li>
-                                    <a href="pets.html" class="text-dark">Pet Portraits</a>
-                                </li>
-                                <li>
-                                    <a href="headshots.html" class="text-dark">Professional Headshots</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="pictureday.html" class="text-dark">School Picture Days</a>
-                        </li>
-                        <li>
-                            <a href="wedding.html" class="text-dark">Weddings</a>
-                        </li>
-                        <li>
-                            <a href="sports.html" class="text-dark">Sport Events</a>
-                        </li>
-                        <li>
-                            <a href="candids.html" class="text-dark">Candids</a>
-                        </li>
-                        <li>
-                            <a href="meetphotographer.html" class="text-dark">Meet the Photographer</a>
-                        </li>
-                        <li>
-                            <a href="contactus.html" class="text-dark" >Contact</a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-light navbar-expand-sm" id="sidebar">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="sidebar">
+                        <ul class="list-unstyled components">
+                            <li class="active">
+                                <a href="#" class="text-dark">Home</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html" class="text-dark">About</a>
+                            </li>
+                            <li>
+                                <a href="faq.html" class="text-dark">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                                    class="dropdown-toggle text-dark">Portraits</a>
+                                <ul class="collapse list-unstyled" id="pageSubmenu">
+                                    <li>
+                                        <a href="family.html" class="text-dark">Family Portraits</a>
+                                    </li>
+                                    <li>
+                                        <a href="senior.html" class="text-dark">Senior Portraits</a>
+                                    </li>
+                                    <li>
+                                        <a href="pets.html" class="text-dark">Pet Portraits</a>
+                                    </li>
+                                    <li>
+                                        <a href="headshots.html" class="text-dark">Professional Headshots</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="pictureday.html" class="text-dark">School Picture Days</a>
+                            </li>
+                            <li>
+                                <a href="wedding.html" class="text-dark">Weddings</a>
+                            </li>
+                            <li>
+                                <a href="sports.html" class="text-dark">Sport Events</a>
+                            </li>
+                            <li>
+                                <a href="candids.html" class="text-dark">Candids</a>
+                            </li>
+                            <li>
+                                <a href="meetphotographer.html" class="text-dark">Meet the Photographer</a>
+                            </li>
+                            <li>
+                                <a href="contactus.html" class="text-dark">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
 
