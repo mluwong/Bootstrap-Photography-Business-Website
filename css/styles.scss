@@ -1,41 +1,36 @@
 $color-primary: #1f243d;
 $color-secondary: #a897f1;
-$color-pale: #CEC8FF;
+$color-dark: #38373d;
 $color-mid: #814291;
 $color-dark: #b681bd;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
 $color-teal: #5d98a1;
 
 $body-font: "Open Sans", sans-serif;
-$header-font: "Roboto Slab", cursive;
+$header-font: "Dancing Script", cursive;
 
 body {
     font-family: $body-font;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: $header-font;    
 }
+
 
 h2 {
     color: $color-primary;
 }
 
 header h2 {
-    color: $color-pale;
+    color: $color-dark;
 }
 
 .site-footer {
-    background-image: linear-gradient($color-pale, white);
+    background-image: linear-gradient($color-dark, white);
     padding: 20px 0;
 }
 
-.jumbotron {
-    margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
-    color: white;
-}
 
 .row-content {
     padding: 50px 0;
@@ -53,13 +48,7 @@ header h2 {
     padding: 20px;
 }
 
-.carousel-caption {
-    background-color: $color-black-transparent;
-}
 
-.carousel {
-    border: solid $color-secondary;
-}
 
 #carouselButton {
     position: absolute;
