@@ -9,7 +9,7 @@ h1 {
   font-family: "Dancing Script", cursive; }
 
   h2 {
-    font-family: "Open Sans", cursive; }
+    font-family: "Dancing Script", cursive; }
 
   h3 {
     font-family: "Dancing Script", cursive; }
@@ -18,10 +18,14 @@ h1 {
       color: #27336d; }
 
     h2 {
-  color: white; }
+  color:black; }
 
 header h2 {
   color: #CEC8FF; }
+
+   h5{
+    line-height: 30px;
+  }
 
 .site-footer {
     background-color: #292a31;
@@ -54,7 +58,7 @@ header h2 {
   color: white; }
 
 #loginModal .modal-header {
-  background-color: #814291;
+  background-color: #27336d;
   color: white; }
 
 b {
